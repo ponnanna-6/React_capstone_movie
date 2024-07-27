@@ -2,7 +2,9 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import RegisterPage from "./pages/RegisterPage";
 import GenrePage from "./pages/GenrePage";
+import CarouselPage from "./pages/CarouselPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
 	return (
@@ -12,8 +14,8 @@ function App() {
 				<Route path="/register" element={<RegisterPage />} />
 				<Route path="/home" element={<RegisterPage />} />
 				<Route path="/genres" element={<GenrePage />} />
-				<Route path="/carousel" element={<RegisterPage />} />
-				<Route path="/dashboard" element={<RegisterPage />} />
+				<Route path="/carousel" element={<CarouselPage />} />
+				<Route path="/dashboard" element={<DashboardPage />} />
 				<Route path="/movies" element={<RegisterPage />} />
 				<Route path="*" element={<NotFoundPage />} />
 			</Routes>

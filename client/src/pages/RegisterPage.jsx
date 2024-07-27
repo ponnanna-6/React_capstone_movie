@@ -7,10 +7,12 @@ import validateForm from "../utils/validateForm";
 
 export default function RegisterPage() {
 	const { user, setUser } = useContext(AppContext);
+	
 	const [name, setName] = useState(user ? user.name : "");
 	const [email, setEmail] = useState(user ? user.email : "");
 	const [username, setUsername] = useState(user ? user.username : "");
 	const [phone, setPhone] = useState(user ? user.phone : "");
+
 	const [error, setError] = useState();
 	const navigate = useNavigate();
 
